@@ -1,0 +1,26 @@
+.head {
+  background: #12d5b5;
+  border-color: transparent;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.head .text {
+  color: #fff;
+}
+.head .navbar-right {
+  float: right!important;
+  zoom: 1;
+}
+.head .navbar-right:after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+.head .custom {
+  background: #feae11;
+  color: #fff;
+  border: transparent;
+}
+body {
+  font-size: 0.42666667rem;
+}

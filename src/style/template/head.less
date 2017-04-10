@@ -1,0 +1,25 @@
+// 头部部分CSS设置
+@import '../variable.less';
+@import '../property.less';
+.head{
+    background: @Hdbgcl;
+    border-color: @touming;
+    .h(40);
+    .text{
+        color: @dcl;
+    }
+    .navbar-right {
+        float: right!important;
+        margin-right: 0px;
+        .clearfix();
+    }
+    .container-fluid{
+        .paddingH(7px);
+    }
+    .custom{
+        background: @warnColor;
+        color: @dcl;
+        border: @touming;
+        .paddingH(20px)
+    }
+}

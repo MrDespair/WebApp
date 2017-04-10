@@ -1,0 +1,35 @@
+// 存放默认设置
+.clearfix(){
+    zoom:1;
+    &:after{
+        content: "";
+        display: inline-block;
+        clear: both;
+    }
+}
+.marginV(@a){
+    margin-top: @a;
+    margin-bottom: @a
+}
+.paddingV(@a){
+    padding-top: @a;
+    padding-bottom: @a
+}
+.marginH(@a){
+    margin-left: @a;
+    margin-right: @a
+}
+.paddingH(@a){
+    padding-left: @a;
+    padding-right: @a
+}
+.fs(@px){
+    font-size:unit(@px/37.5,rem);
+}
+.w(@px){
+    width:unit(@px/37.5,rem);
+}
+.h(@px){
+    height:unit(@px/37.5,rem);
+    line-height: unit(@px/37.5,rem);
+}
