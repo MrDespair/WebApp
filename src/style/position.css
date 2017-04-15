@@ -1,0 +1,68 @@
+.textC {
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.companyInfo {
+  background: #fff;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #eee;
+}
+.companyInfo .media-object {
+  width: 65px;
+  height: 65px;
+}
+.companyInfo .media-body {
+  padding-left: 20px;
+  width: 80%;
+}
+.companyInfo .media-title {
+  font-size: 16px;
+}
+.companyInfo p {
+  width: 100%;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.positionClass {
+  background: #fff;
+}
+.bottom-btn {
+  position: fixed;
+  height: 50px;
+  line-height: 50px;
+  background: #12d5b5;
+  bottom: 0px;
+  width: 100%;
+  border: none;
+  left: 0px;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+}
+.positionInfo {
+  background: #fff;
+  font-size: 14px;
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.positionInfo .row {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.positionInfo .row span,
+.positionInfo .row b {
+  margin-right: 10px;
+}
+.positionInfo .star {
+  position: absolute;
+  right: 24px;
+  top: 35px;
+}

@@ -1,8 +1,20 @@
+.textC {
+  text-align: center;
+}
+.red {
+  color: red;
+}
 .head {
   background: #12d5b5;
   border-color: transparent;
-  height: 1.06666667rem;
-  line-height: 1.06666667rem;
+  margin-bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+  font-size: 18px;
+  line-height: 44px;
 }
 .head .text {
   color: #fff;
@@ -27,4 +39,11 @@
   border: transparent;
   padding-left: 20px;
   padding-right: 20px;
+}
+.head .navbar-left {
+  float: left;
+  font-size: 20px;
+}
+.instead {
+  height: 50px;
 }

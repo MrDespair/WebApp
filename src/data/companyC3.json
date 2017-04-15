@@ -1,0 +1,27 @@
+{
+    "id": "c3",
+    "imageUrl": "/image/company-3.png",
+    "name": "千度",
+    "industry": "移动互联网",
+    "state": "A轮",
+    "people": "500人以上",
+    "positionClass": [{
+      "id": "xiaoshou",
+      "name": "销售",
+      "positionList": [{
+        "id": "p3",
+        "name": "销售",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "3k-5k"
+      }]
+    },{
+      "id": "chanping",
+      "name": "产品经理",
+      "positionList": [{
+        "id": "p4",
+        "name": "产品经理",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "15k-25k"
+        }]
+    }]
+}

@@ -1,0 +1,59 @@
+//公司详情职位部分
+@import '../variable.less';
+@import '../property.less';
+.positionClass{
+    background: #fff;
+    .row{
+        .paddingV(10px);
+         border-top: 1px solid #d4d4d4;
+         h5{
+             padding-left:15px;
+         }
+    }
+    .row.positionList{
+        .paddingV(0px);
+    }
+    button{
+        //margin-right:15px;
+        margin-left: 15px;
+        background: @btnColor;
+        outline: none;
+        border: none;
+        color:#000;
+        &.active{
+            background: @Hdbgcl;
+            box-shadow: none;
+            outline: none;
+            &:hover{
+                background: @Hdbgcl;
+                color:#fff;
+            }
+        }
+        &:focus{
+            outline: none;
+            border: none;
+        }
+        &:hover{
+            background: @btnColor;
+            color:#000;
+        }
+    }
+    ul{
+        width: 100%;
+        list-style: none;
+        margin-bottom: 0px;
+        font-size: 14px;
+        li{
+            .paddingV(10px);
+            .paddingH(15px);
+            position: relative;
+            border-bottom: 1px solid #ccc;
+        }
+        span{
+            position: absolute;
+            color: red;
+            right: 15px;
+            top:4px;
+        }
+    }
+}

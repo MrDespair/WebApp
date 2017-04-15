@@ -1,0 +1,17 @@
+<!--搜索页面-->
+<div class="search">
+    <div>
+        <nav class="head">
+            <button type="button" ng-click="name=''">取消</button>
+            <input type="text" ng-model="name" placeholder="搜索职位公司城市">
+            <img src="/image/search.png" alt="">
+            <button type="button" ng-click="search()">搜索</button>
+        </nav>
+        <div class="instead"></div>
+    </div>
+    <div app-tab list="tabList" tab-click="tclick(id,name)"></div>
+    <div app-position-list="" filter-obj="filterObj" data="list"></div>
+    <div app-sheet="" select="sclick(id,name)"list="sheet.list" visable="sheet.visable"></div>
+    <div app-foot></div>
+    
+</div>

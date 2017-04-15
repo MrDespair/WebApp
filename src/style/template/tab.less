@@ -1,0 +1,24 @@
+.tab{
+    background: #f7f7f7;
+    height: 40px;
+    line-height: 40px;
+    li{
+        width: 100%/3;
+        height: 100%;
+        margin-left: 0px;
+        text-align: center;
+        &+li{
+            margin-left: 0px;
+        }
+        a{
+            padding: 0px;
+            font-size: 14px;
+            color: #000;
+            border-radius: 0px;
+            border-bottom: 2px solid #eee;
+            &.active{
+                border-bottom: 2px solid @Hdbgcl;
+            }
+        }
+    }
+}

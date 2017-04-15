@@ -1,0 +1,18 @@
+{
+    "id": "c2",
+    "imageUrl": "/image/company-2.png",
+    "name": "六一集团有限公司",
+    "industry": "互联网",
+    "state": "A轮",
+    "people": "500人以上",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "技术",
+      "positionList": [{
+        "id": "p2",
+        "name": "阿语SEM工程师",
+        "createdDate": "2016-06-01 01:05",
+        "salary": "5k~8k"
+      }]
+    }]
+}

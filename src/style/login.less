@@ -1,0 +1,53 @@
+.login{
+    background:url(../image/background.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    .validation-invalid{
+        color: red;
+    }
+    form{
+        margin-top:260px;
+        width: 80%;
+        .marginH(auto);
+        .input-group{
+            .marginV(2px);
+        }
+        .input-group-addon{
+            background:rgba(0,0,0,60%);
+            border: none;
+            img{
+                width: 16px;
+            }
+        }
+        .form-control{
+            background:rgba(0,0,0,30%);
+            color:#fff;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            &::-webkit-input-placeholder{
+                color: #f3f3f3;
+            }
+        }
+        .btn-wrap{
+            margin-top: 60px;
+            button{
+                .marginV(20px);
+            }
+            .btn-reg{
+                background: tint(@loginColor, 50%); 
+                border-color: tint(@loginColor, 10%); 
+                color: @loginColor;
+            }
+        }
+    }
+    label{
+        padding-top: 7px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+}

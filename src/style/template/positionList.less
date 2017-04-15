@@ -1,0 +1,34 @@
+// 主体部分CSS设置
+@import '../variable.less';
+@import '../property.less';
+.positionList{
+    background: #fff;
+    overflow: hidden;
+    .media-object{
+        width: 65px;
+        height: 65px;
+    }
+    .media-body{
+        .paddingV(10px);
+    }
+    .media-heading{
+        .fs(70);
+        font-weight: 600;
+    }
+    .col-md-6{
+        border-bottom: 1px solid #d4d4d4;
+    }
+    p{
+        white-space: nowrap;
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+    }
+    .company{
+        margin-bottom: 0px;
+    }
+    .date{
+        margin-bottom: 0px;
+    }
+}

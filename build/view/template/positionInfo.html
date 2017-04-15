@@ -1,0 +1,12 @@
+<div class="container-fluid positionInfo">
+    <div class="row">
+        <p><b>{{pos.name}}</b><span class="red">{{pos.salaryName}}</span></p>
+    </div>
+    <div class="row">
+        <p><span>{{pos.cityName}}</span><span>{{pos.experience}}</span><span>{{pos.education}}</span></p>
+    </div>
+    <div class="row">
+        <p>{{pos.benefit}}</p>
+    </div>
+    <img ng-show="isLogin" ng-src="{{imagePath}}" ng-click="add()" alt="image" class="star" >
+</div>

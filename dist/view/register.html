@@ -1,0 +1,15 @@
+<div class="login">
+    <form class="form-horizontal" name="reg">
+        <div class="input-group">
+            <span for="" class="input-group-addon"><img src="./image/account.png" alt=""></span>
+            <input type="text" name="phone"validator="phone" class="form-control" placeholder="用户名" ng-model="user.name">
+        </div>
+        <div class="input-group">
+            <span for="" class="input-group-addon"><img src="./image/lock.png" alt=""></span>
+            <input type="password" name="password"validator="password" class="form-control"placeholder="密码" ng-model="user.password">
+        </div>
+        <div class="btn-wrap">
+            <button class="btn btn-primary btn-block btn-reg"validation-submit="reg" ng-click="back()">注册</button>
+        </div>
+    </form>
+</div>

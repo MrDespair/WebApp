@@ -1,0 +1,16 @@
+<div class="container-fluid positionClass">
+    <div class="row">
+        <h5>职位分类</h5>
+        <button ng-click="show($index)" class="{{$index===isActive?'active':''}} btn btn-success" type="button" ng-repeat="cls in com.positionClass">{{cls.name}}</button>
+        <!--<button class="btn btn-success" type="button">运营</button>-->
+    </div>
+    <div class="row positionList">
+        <ul class="list-unstyled">
+            <li ng-repeat="pos in positionList">
+                <p>{{pos.name}}</p>
+                <p>{{pos.createdDate}}</p>
+                <span>{{pos.salary}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

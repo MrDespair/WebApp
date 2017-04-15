@@ -1,0 +1,19 @@
+.tab {
+  background: #eee;
+  height: 40px;
+  line-height: 40px;
+}
+.tab li {
+  width: 33.33333333%;
+  height: 100%;
+  margin-left: 0px;
+  text-align: center;
+}
+.tab li + li {
+  margin-left: 0px;
+}
+.tab li a {
+  padding: 0px;
+  font-size: 14px;
+  color: #000;
+}

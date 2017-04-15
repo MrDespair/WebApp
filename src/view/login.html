@@ -1,0 +1,16 @@
+<div class="login">
+    <form class="form-horizontal" name="login">
+        <div class="input-group">
+            <span for="" class="input-group-addon"><img src="./image/account.png" alt=""></span>
+            <input type="text" validator="phone" class="form-control" placeholder="用户名" ng-model="user.name">
+        </div>
+        <div class="input-group">
+            <span for="" class="input-group-addon"><img src="./image/lock.png" alt=""></span>
+            <input type="password" validator="password" class="form-control"placeholder="密码"ng-model="user.password">
+        </div>
+        <div class="btn-wrap">
+            <button class="btn btn-primary btn-block btn-login" ng-click="check()">登录</button>
+            <button class="btn btn-primary btn-block btn-reg" ui-sref="register">注册</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,49 @@
+// 底部部分CSS设置
+@import '../variable.less';
+@import '../property.less';
+.foot{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    border-top: 1px solid #d4d4d4;
+    li{
+        width: 100%/3;
+        margin-left: 0px;
+        text-align: center;
+        &+li{
+            margin-left: 0px;
+        }
+        .icon{
+            width: 25px;
+            height: 21px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            left: -5px;
+            top: -2px;
+        }
+        .icon-document{
+            background: url(../image/document.png);
+        }
+        .icon-search{
+            background: url(../image/search.png) no-repeat;
+        }
+        .icon-my{
+            background: url(../image/my.png) no-repeat;
+        }
+        a{
+            .fs(60);
+            height: 50px;
+            line-height: 30px;
+            color: @muteColor;
+            border-radius: 0px;
+            background: #fff;
+            &.select{
+                background: @hlightBg;
+                color: @hlightCl;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="container-fluid positionList">
+    <div class="row">
+        <div ui-sref="position({id:x.id})" class="col-md-6" ng-repeat="x in data|filterByObj:filterObj">
+            <div class="media">
+                <div class="media-left media-middle">
+                    <img ng-src="{{x.imageUrl}}" alt="image" class="media-object">
+                </div>
+                <div class="media-body">
+                    <h3 class="media-heading">{{x.job}}</h3>
+                    <p class="company">{{x.companyName}}【{{x.cityName}}】{{x.industryName}}{{x.scaleName}}</p>
+                    <p class="date">{{x.salaryName}}</p>
+                    <p class="date">{{x.date}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
