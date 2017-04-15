@@ -5,12 +5,6 @@ angular.module('app').controller('mainCtrl',['$scope','$http','cache',function($
     if(cache.get('id')){
         $scope.show=false
     }
-    $scope.logout=function(){
-        cache.remove('id');
-        cache.remove('name');
-        cache.remove('image');
-        $scope.show=true;
-    }
     $http.get('/data/positionList.json').then(function(resp){
         $scope.list=resp.data;
     },function(resp){

@@ -15,6 +15,7 @@
 .positionList .media-body {
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
 }
 .positionList .media-heading {
   font-size: 1.86666667rem;
@@ -35,4 +36,18 @@
 }
 .positionList .date {
   margin-bottom: 0px;
+}
+.positionList .icon {
+  display: inline-block;
+  width: 43px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.positionList .star {
+  background: url(../image/star.png);
+}
+.positionList .star-active {
+  background: url(../image/star-active.png);
 }

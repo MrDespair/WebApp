@@ -10,6 +10,7 @@
                     <p class="company">{{x.companyName}}【{{x.cityName}}】{{x.industryName}}{{x.scaleName}}</p>
                     <p class="date">{{x.salaryName}}</p>
                     <p class="date">{{x.date}}</p>
+                    <span ng-show="isShow" ng-click="$event.stopPropagation();select(x)" class="icon {{x.select?'star-active':'star'}}"></span>
                 </div>
             </div>
         </div>

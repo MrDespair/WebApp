@@ -1,11 +1,22 @@
-angular.module('app').directive('appPositionList',[function(){  //自定义指令
+angular.module('app').directive('appPositionList',['$http',function($http){  //自定义指令
     return{
         restrict:'A',
         replace:true,
         templateUrl:'view/template/positionList.html',
         scope:{
             data:'=',
-            filterObj:'='
+            filterObj:'=',
+            isShow:'='
+        },
+        link:function(scope){
+            scope.select=function(item){
+                $http.post('data/favorite.json',{
+                    id:item.id,
+                    select:!item.select
+                }).success(function(resp){
+                    item.select=!item.select;
+                })
+            };
         }
     }
 }]);

@@ -8,5 +8,5 @@
     <div class="row">
         <p>{{pos.benefit}}</p>
     </div>
-    <img ng-show="isLogin" ng-src="{{imagePath}}" ng-click="add()" alt="image" class="star" >
+    <span ng-show="isLogin" ng-click="selecting(pos)" class="icon {{select?'star-active':'star'}}"></span>
 </div>

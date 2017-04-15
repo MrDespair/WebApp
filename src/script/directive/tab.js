@@ -5,7 +5,8 @@ angular.module('app').directive('appTab',[function(){  //自定义指令
         templateUrl:'view/template/tab.html',
         scope:{
             list:'=',
-            tabClick:'&'
+            tabClick:'&',
+            selected:'=',
         },
         link:function(scope){
             scope.click=function(tab){

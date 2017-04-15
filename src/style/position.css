@@ -10,7 +10,7 @@
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #d4d4d4;
 }
 .companyInfo .media-object {
   width: 65px;
@@ -32,6 +32,62 @@
 }
 .positionClass {
   background: #fff;
+}
+.positionClass .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #d4d4d4;
+}
+.positionClass .row h5 {
+  padding-left: 15px;
+}
+.positionClass .row.positionList {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.positionClass button {
+  margin-left: 15px;
+  background: #def8f5;
+  outline: none;
+  border: none;
+  color: #000;
+}
+.positionClass button.active {
+  background: #12d5b5;
+  box-shadow: none;
+  outline: none;
+}
+.positionClass button.active:hover {
+  background: #12d5b5;
+  color: #fff;
+}
+.positionClass button:focus {
+  outline: none;
+  border: none;
+}
+.positionClass button:hover {
+  background: #def8f5;
+  color: #000;
+}
+.positionClass ul {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+.positionClass ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.positionClass ul span {
+  position: absolute;
+  color: red;
+  right: 15px;
+  top: 4px;
 }
 .bottom-btn {
   position: fixed;
@@ -61,8 +117,17 @@
 .positionInfo .row b {
   margin-right: 10px;
 }
-.positionInfo .star {
+.positionInfo .icon {
+  display: inline-block;
+  width: 43px;
+  height: 40px;
   position: absolute;
-  right: 24px;
-  top: 35px;
+  right: 20px;
+  top: 20px;
+}
+.positionInfo .star {
+  background: url(../image/star.png);
+}
+.positionInfo .star-active {
+  background: url(../image/star-active.png);
 }

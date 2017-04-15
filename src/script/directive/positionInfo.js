@@ -1,4 +1,4 @@
-angular.module('app').directive('appPositionInfo',[function(){  //自定义指令
+angular.module('app').directive('appPositionInfo',['$http',function($http){  //自定义指令
     return{
         restrict:'A',
         replace:true,
@@ -6,10 +6,18 @@ angular.module('app').directive('appPositionInfo',[function(){  //自定义指�
         scope:{
             isActive:'=',
             isLogin:'=',
-            pos:'='
+            pos:'=',
+            select:'='
         },
         link:function(scope){
-            scope.imagePath=scope.isActive?'image/star-active.png':'image/star.png'
+            scope.selecting=function(item){
+                $http.post('data/favorite.json',{
+                    id:item.id,
+                    select:!item.select
+                }).success(function(resp){
+                    scope.select=!scope.select;
+                })
+            };
         }
     }
 }]);

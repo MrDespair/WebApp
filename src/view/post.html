@@ -1,5 +1,5 @@
 <div>
     <div app-head-bar head-name="投递记录"></div>
-    <div app-tab list="tabList"></div>
-    <div app-position-list></div>
+    <div app-tab selected="default" list="tabList" tab-click="tClick(id,name)"></div>
+    <div app-position-list data="positionList" filter-obj="filterObj"></div>
 </div>

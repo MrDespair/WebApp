@@ -104,6 +104,7 @@
 .positionList .media-body {
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
 }
 .positionList .media-heading {
   font-size: 1.86666667rem;
@@ -124,6 +125,20 @@
 }
 .positionList .date {
   margin-bottom: 0px;
+}
+.positionList .icon {
+  display: inline-block;
+  width: 43px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.positionList .star {
+  background: url(../image/star.png);
+}
+.positionList .star-active {
+  background: url(../image/star-active.png);
 }
 .tab {
   background: #f7f7f7;
@@ -309,10 +324,19 @@
 .positionInfo .row b {
   margin-right: 10px;
 }
-.positionInfo .star {
+.positionInfo .icon {
+  display: inline-block;
+  width: 43px;
+  height: 40px;
   position: absolute;
-  right: 24px;
-  top: 35px;
+  right: 20px;
+  top: 20px;
+}
+.positionInfo .star {
+  background: url(../image/star.png);
+}
+.positionInfo .star-active {
+  background: url(../image/star-active.png);
 }
 .search .head {
   height: 50px;
@@ -412,7 +436,58 @@
   margin-bottom: 0;
   text-align: right;
 }
+.me img {
+  margin-top: 60px;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.me .name {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.me .btn-wrap {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.me .btn-wrap .btn-lg {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  background: #12d5b5;
+  color: #fff;
+}
+.me .btn-wrap .btn-block {
+  margin-top: 40px;
+}
+.me h3 {
+  padding-top: 200px;
+  color: #a0a0a0;
+}
+.me .btn-main {
+  background: #12d5b5;
+  color: #fff;
+}
+.me .tologin {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 body {
   font-size: 0.42666667rem;
   background: #eee;
+}
+.ng-enter {
+  transition: 0.2s linear all;
+  opacity: 0;
+}
+.ng-enter-active {
+  opacity: 1;
 }
